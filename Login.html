@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>
+        Login - PWD LIFE
+    </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header>
+        <img src="Pictures/Header Image.jpg" alt="PWD Life">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Index.html" accesskey="h">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Find Orgs.html">Find Orgs</a></li>
+            <li><a href="Know PWDs.html">Know PWDs</a></li>
+            <li><a href="Blog Spot.html">Blog Spot</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Login</h1>
+        <div class="div_col1 div_login">
+            <label for="username">Username: </label>
+            <input type="text" id="username"> 
+            <br>
+            <label for="password">Password: </label>
+            <input type="password" id="password">
+            <br>
+            <a href="#" onclick="forgotpassword()">Forgot Password?</a>
+            <br>
+            <a href="Register.html">Don't have an account?</a>
+            <br>
+            <button type="button" id="login" onclick="login()">Login</button>
+
+            <center>
+                <p>Get in touch through:</p>
+                <p>Phone number: +639xxxxxxxxx</p>
+                <p>pwdlife@gmail.com</p>
+                <p>Facebook: @PWDLife</p>
+                <p>Twitter: @PWDLife</p>
+                <img src="Pictures/PWD Life.jpg" alt="PWD Life Logo" width=150px>
+                <br>
+                <p>PWD LIFE - Persons with Disability Leaders, Inspirations, Family and Empowerment</p>
+            </center>
+        </div>
+
+        
+    </main>
+
+    <footer>
+        <marquee>
+            <p>Copyright © 2021 - Designed by Edrian Delos Reyes</p>
+        </marquee>
+    </footer>
+
+    <script src="JavaScript.js"></script>
+</body>
+<script>
+    document.getElementById("username").focus()
+</script>
+</html>

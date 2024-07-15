@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>
+        Find Orgs - PWD LIFE
+    </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header>
+        <img src="Pictures/Header Image.jpg" alt="PWD Life">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Index.html" accesskey="h">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Find Orgs.html">Find Orgs</a></li>
+            <li><a href="Know PWDs.html">Know PWDs</a></li>
+            <li><a href="Blog Spot.html">Blog Spot</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a href="Login.html">Login</a></li>
+            <li><a href="Register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1>Find Organizations</h1>
+        
+        <div class="div_col1">
+            <input id="searchOrgs" type="text" placeholder="Search Organization">
+            <button id="btnSearchOrgs" onclick="btnSearchOrgs()">Search</button>
+            <button id="btnSearchOrgs" onclick="clearBtnSearchOrgs()">Clear</button>
+            
+
+            <select id="cmbSortOrgs" onchange="sortOrgs()">
+                <option value="Sort by Name">Sort by Name</option>
+                <option value="Sort A to Z">Sort A to Z</option>
+                <option value="Sort Z to A">Sort Z to A</option>
+            </select>
+
+            <select id="cmbFilterOrgs" onchange="filterOrgs()">
+                <option value="Filter by Disability Type">Filter by Disability Type</option>
+                <option value="Psychosocial Disability">Psychosocial Disability</option>
+                <option value="Chronic Illness">Chronic Illness</option>
+                <option value="Learning Disability">Learning Disability</option>
+                <option value="Mental Disability">Mental Disability</option>
+                <option value="Visual Disability">Visual Disability</option>
+                <option value="Orthopedic Disability">Orthopedic Disability</option>
+                <option value="Communication Disability">Communication Disability</option>
+            </select>
+
+            <br>
+
+            <p id="div_findorgsTable">
+            
+            </p>
+        </div>
+    </main>
+
+    <footer>
+        <marquee>
+            <p>Copyright © 2021 - Designed by Edrian Delos Reyes</p>
+        </marquee>
+    </footer>
+
+    <script src="JavaScript.js"></script>
+    <script>
+        document.getElementById("searchOrgs").focus();
+    </script>
+</body>
+</html>

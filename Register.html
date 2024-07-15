@@ -1,0 +1,204 @@
+<html>
+<head>
+    <title>
+        Register - PWD LIFE
+    </title>
+    <link rel="stylesheet" href="Style.css">
+</head>
+
+<body>
+    <header>
+        <img src="Pictures/Header Image.jpg" alt="PWD Life">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Index.html" accesskey="h">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Find Orgs.html">Find Orgs</a></li>
+            <li><a href="Know PWDs.html">Know PWDs</a></li>
+            <li><a href="Blog Spot.html">Blog Spot</a></li>
+            <li><a href="Contact Us.html">Contact Us</a></li>
+            <li><a id="alogin" href="Login.html">Login</a></li>
+            <li><a id="aregister" href="Register.html">Register</a></li>
+        </ul>
+    </nav>
+
+    <main id="registering">
+        <h1>Register</h1>
+        
+        <div class="div_col1 div_register">
+            <p>By registering you'll be able to: </p>
+            <ul>
+                <li>Share who you are as a Person with Disability; </li>
+                <li>Post your own content; </li>
+                <li>Promote your business, online endevours or anynthing life related;</li>
+                <li>Be one of the partner organizations; </li>
+                <li>Connect with other PWDs through us; and</li>
+                <li>Be a part of PWD LIFE's journey.</li>
+            </ul>
+
+            <p id="reqfname"></p>
+            <p id="reqmname"></p>
+            <p id="reqlname"></p>
+            <p id="reqbirthday"></p>
+            <p id="reqgender"></p>
+            <p id="reqaddress"></p>
+            <p id="reqemailaddress"></p>
+            <p id="reqcontactnumber"></p>
+            <p id="reqtypeofdisability"></p>
+            <p id="requsername"></p>
+            <p id="reqpassword"></p>
+
+
+            <label for="fname">First Name: </label>
+            <input type="text" id="fname">
+            <label for="mname">Middle Name: </label>
+            <input type="text" id="mname">
+            <label for="lname">Last Name: </label>
+            <input type="text" id="lname">
+            <br>
+            <label for="birthday">Birthday: </label>
+            <input type="date" id="birthday">
+            <label for="female">Female</label>
+            <select id="gender">
+                <option value="Select">--Select gender--</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <br>
+            <label for="address">Address: </label>
+            <input type="text" id="address">
+            <br>
+            <label for="emailaddress">Email Address: </label>
+            <input type="email" id="emailaddress">
+            <label for="contactnumber">Contact Number: </label>
+            <input type="number" id="contactnumber">
+            <br>
+            <label for="typeofdisability">Type of Disability: </label>
+            <select id="typeofdisability">
+                <option value="Select">--Select a Disability--</option>
+                <option valule="Psychosocial Disability">Psychosocial Disability</option>
+                <option valule="Chronic Illness">Chronic Illness</option>
+                <option valule="">Learning Disability</option>
+                <option valule="Mental Disability">Mental Disability</option>
+                <option valule="Visual Disability">Visual Disability</option>
+                <option valule="Orthopedic Disability">Orthopedic Disability</option>
+                <option valule="Communication Disability">Communication Disability</option>
+            </select>
+            <br>
+            <label for="username">Username: </label>
+            <input type="text" id="username">
+            <br>
+            <label for="password">Password: </label>
+            <input type="password" id="password">
+            <label for="confirmpassword">Confirm Password: </label>
+            <input type="password" id="confirmpassword">
+            <br>
+            <button type="button" id="register" onclick="register()">Register</button>
+            <br>
+
+            <center>
+                <p>Get in touch through:</p>
+                <p>Phone number: +639xxxxxxxxx</p>
+                <p>pwdlife@gmail.com</p>
+                <p>Facebook: @PWDLife</p>
+                <p>Twitter: @PWDLife</p>
+                <img src="Pictures/PWD Life.jpg" alt="PWD Life Logo" width=150px>
+                <br>
+                <p>PWD LIFE - Persons with Disability Leaders, Inspirations, Family and Empowerment</p>
+            </center>
+        </div>
+    </main>
+
+
+    <!-- REGISTERED MAIN -->
+    <main id="registered" style="display:none; ">
+        <h1 id="myaccounth1">My Account</h1>
+            <div class="div_col1">
+                <h2>Basic Information</h2>
+                <table width=25%>
+                    <tr>
+                        <td class="bold">Type of Disability: </td>
+                        <td><input type="text" id="regtypeofdisability" value=""></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Birthday: </td>
+                        <td><input type="text" id="regbirthday" value=""></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Gender: </td>
+                        <td><input type="text" id="reggender" value=""></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Address: </td>
+                        <td><input type="text" id="regaddress" value=""></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Contact Number: </td>
+                        <td><input type="text" id="regcontactnumber" value=""></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Email Address: </td>
+                        <td><input type="text" id="regemailaddress" value=""></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Educational Attainment: </td>
+                        <td><input type="text" id=""></td>
+                    </tr>
+                    <tr>
+                        <td class="bold">Occupation: </td>
+                        <td><input type="text" id=""></td>
+                    </tr>
+                </table>
+            
+                <h2>Biography</h2>
+                    <textarea cols="150" rows="10"></textarea>
+
+                <h2>Account Information</h2>
+                    <table width=25%>
+                        <tr>
+                            <td class="bold">Username: </td>
+                            <td><input type="text" id=""></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">Old Password: </td>
+                            <td><input type="password" id=""></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">New Password: </td>
+                            <td><input type="password" id=""></td>
+                        </tr>
+                        <tr>
+                            <td class="bold">Confirm New Password: </td>
+                            <td><input type="password" id=""></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <button type="button" id="savechanges" onclick="savechanges()">Save Changes</button>
+                    
+                <center>
+                    <p>Get in touch through:</p>
+                    <p>Phone number: +639xxxxxxxxx</p>
+                    <p>pwdlife@gmail.com</p>
+                    <p>Facebook: @PWDLife</p>
+                    <p>Twitter: @PWDLife</p>
+                    <img src="Pictures/PWD Life.jpg" alt="PWD Life Logo" width=150px>
+                    <br>
+                    <p>PWD LIFE - Persons with Disability Leaders, Inspirations, Family and Empowerment</p>
+                </center>
+            </div>
+    </main>
+
+    <footer>
+        <marquee>
+            <p>Copyright © 2021 - Designed by Edrian Delos Reyes</p>
+        </marquee>
+    </footer>
+
+    <script src="JavaScript.js"></script>
+    <script>
+        document.getElementById("fname").focus()
+    </script>
+</body>
+</html>

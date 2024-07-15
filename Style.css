@@ -1,0 +1,66 @@
+body {margin:0px; padding:0px; font-family: bookman old style; }
+h1, h2, h3, h4, h5, h6 {font-family: cooper black; }
+p {text-indent: 30px; }
+
+/* HEADER IMAGE */
+header {float:left; }
+header img {float:left; }
+
+/* NAVIGATIONAL BAR */
+nav {float:left; background-color: #CD0000; height: 50px; width:100%; }
+nav ul {margin-left:280px; }
+nav ul li {list-style-type:none; width:150px; display:inline-block; text-align:center; margin-top:2px; }
+nav ul li a {text-decoration:none; color:#fff; font-size: 130%; }
+nav ul li a:hover, nav ul li a:focus {text-decoration: underline; background-color:#fff; color:#CD0000; border:6px #fff solid; }
+
+/* FOOTER */
+footer {float:left; width:100%; background-color: #CD0000; color:#fff; margin-top:25px; }
+
+/* MAIN CONTENT */
+main {float:left; width:80%; margin-left: 10%; }
+.div_col1 {float:left; width:95%; margin-left:2.5%; margin-right:2.5%; }
+.div_col2 {float:left; width:45%; margin-left:2.5%; margin-right:2.5%; }
+.div_col5 {float:left; width:18%; margin-left:1%; margin-right:1%; }
+.bold {font-weight:bold; }
+
+/* HOME PAGE */
+#lookatImg {height:50%;}
+#featuredVideo {width:80%; }
+#watchoutImg {width:90%; }
+
+/* FIND ORGS */
+#searchOrgs {height:40px; width: 300px; margin-bottom: 20px; font-size: 16px; }
+#btnSearchOrgs {height:40px; width: 70px; margin-bottom: 20px; background-color: #CD0000; color: #fff; font-size: 16px; }
+#cmbSortOrgs {height:40px; width: 150px; margin-bottom: 20px; background-color: #CD0000; color: #fff; font-size: 16px; float:right; }
+#cmbFilterOrgs {height:40px; width: 220px; margin-bottom: 20px; background-color: #CD0000; color: #fff;  font-size: 16px; float:right; }
+
+#findorgsTable {width:100%; margin-bottom:25px; }
+#findorgsTable, #findorgsTable td, #findorgsTable tr {border:1px black solid; border-collapse:collapse; }
+#findorgsTable th {text-align:center; height:50px; font-size:150%;  }
+#findorgsTable img {height:75px; }
+
+/* KNOW PWD */
+.knowpwdImg {height: 180px;}
+.knowpwdSeeMore {text-decoration: none; background-color:#CD0000; border:10px #CD0000 solid; color:#fff;  }
+.knowpwdSeeMore:hover, .knowpwdSeeMore:focus {background-color:#000; text-decoration:underline; border:10px #000 solid;}
+.marginBottom {margin-bottom:30px; }
+
+/* BLOG SPOT */
+.div_songs audio {width:100%; }
+
+/* CONTACT US */
+.div_contactus label {font-size: 125%; }
+.div_contactus input { height:30px; width:668px; margin-top: 5px; margin-bottom: 5px; }
+.div_contactus #submit {margin-top: 15px; margin-bottom: 15px; background-color: #CD0000; font-size: 150%; color:white; padding:10px 50px; }
+
+/* LOGIN */
+.div_login label {font-size: 120%; }
+.div_login input {margin-top: 10px; margin-bottom:10px; height: 30px; width: 300px; }
+.div_login #login {margin-top: 20px; padding: 10px 30px; background-color:#CD0000; color:white; font-size: 120%; }
+
+/* REGISTER */
+.div_register label {font-size: 120%; }
+.div_register input, .div_register select {margin-top: 10px; margin-bottom:10px; height: 30px; width: 300px; margin-right: 30px; }
+.div_register #male, .div_register #female, .div_register #other {margin-top: 0px; margin-bottom:0px; height: 15px; width: 15px; margin-right: 0px; }
+.div_register #address {width: 800px}
+.div_register #register, #savechanges {margin-top: 20px; padding: 10px 30px; background-color:#CD0000; color:white; font-size: 120%; }
